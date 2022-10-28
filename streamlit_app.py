@@ -7,7 +7,7 @@ streamlit.text('Kale, Spanish & Rocket Smoothi')
 streamlit.text('Hard-Boiled Free-Range Egg')
 streamlit.text('Avacado Toast')
 
-
+import requests
 
 streamlit.header('Build Your Own Fruit Smoothie')
 
@@ -23,4 +23,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
+
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
 
