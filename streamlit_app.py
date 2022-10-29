@@ -11,6 +11,7 @@ streamlit.header("The fruit load contains:")
 streamlit.dataframe(my_data_rows)
 #streamlit.text("Hello from Snowflake:")
 
+add_my_fruit = streamlit.input("Your Fruit:")
 
 streamlit.title('My Parents New Healthy Dinner!')
 streamlit.header('Breakfast Menu')
